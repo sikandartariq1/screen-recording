@@ -1,12 +1,12 @@
 {  
-   "name":"RecordRTC",
-   "short_name":"RecordRTC",
-   "author":"Muaz Khan",
+   "name":"Zalvadora Screen Recoder",
+   "short_name":"zalvadora",
+   "author":"Sikandar Tariq",
    "version":"5.8",
    "manifest_version":2,
    "minimum_chrome_version":"49",
-   "description":"Record screen activity, camera, tab, speakers in 4K HD video format",
-   "homepage_url":"https://www.WebRTC-Experiment.com/RecordRTC/",
+   "description":"Record screen with you custom options, aslo recode pdf lectures with cam.",
+   "homepage_url":"https://zalvadora.com",
    "background":{  
       "scripts":[  
          "background/background.common.js",
