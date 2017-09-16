@@ -44,13 +44,6 @@
       "identity",
       "https://www.googleapis.com/*"
    ],
-   "oauth2": {
-       "client_id": "41556190767-44cbqasurg3dhfr9hmj1v90q5v8r9v46.apps.googleusercontent.com",
-       "scopes": [
-         "https://www.googleapis.com/auth/youtube.upload",
-         "https://www.googleapis.com/auth/youtube"
-       ]
-   },
    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
    "web_accessible_resources":[  
       "images/main-icon.png"

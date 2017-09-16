@@ -38,20 +38,20 @@ DiskStorage.Fetch('latest-file', function(f) {
     };
 });
 
-var btnUploadDropDown = document.querySelector('#btn-upload-dropdown');
-document.querySelector('#btn-upload').onclick = function(e) {
-    e.stopPropagation();
+// var btnUploadDropDown = document.querySelector('#btn-upload-dropdown');
+// document.querySelector('#btn-upload').onclick = function(e) {
+//     e.stopPropagation();
 
-    if(btnUploadDropDown.className === 'visible') {
-        btnUploadDropDown.className = '';
-    }
-    else {
-        btnUploadDropDown.className = 'visible';
-    }
-};
+//     if(btnUploadDropDown.className === 'visible') {
+//         btnUploadDropDown.className = '';
+//     }
+//     else {
+//         btnUploadDropDown.className = 'visible';
+//     }
+// };
 
-document.body.onclick = function() {
-    if(btnUploadDropDown.className === 'visible') {
-        btnUploadDropDown.className = '';
-    }
-};
+// document.body.onclick = function() {
+//     if(btnUploadDropDown.className === 'visible') {
+//         btnUploadDropDown.className = '';
+//     }
+// };
