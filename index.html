@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pdf & Camera Recording, Lecture Recording">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Pdf & Camera Recording, Lecture Recording">
+    <meta itemprop="name" content="Pdf & Camera Recording, Lecture Recording">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+    <base target="_blank">
+    <title>Project</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+    <style>
+
+
+#gum-res-local {
+    cursor: move;
+    z-index:1;
+}
+.active {
+    background: grey;
+    z-index: 2;
+}
+        body, html {
+            height: 100%;
+        }
+
+        button {
+            margin: 10px 10px 20px 20px;
+            width: 100px;
+        }
+
+        div#buttons {
+            margin: 25px -30px 1em -30px;
+            height:130px;
+        }
+
+        div#container {
+            max-width: 100%;
+        }
+
+        p#dimensions {
+            height: 1em;
+            margin: 0 0 1.5em 0;
+        }
+
+        video {
+            background: none;
+            height: auto;
+            width: auto;
+        }
+        .pdfDiv{
+            width:calc(100% - 165px);
+            height:80vh;
+        }
+        .pdfDiv2{
+            width:calc(100% - 324px);
+            height:80vh;
+        }
+
+        .videoDiv{
+            position:relative;
+            z-index:100;
+
+        }
+        video{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="background-color:#f9fafb; margin:0 !important;">
+        <p id="dimensions"></p>
+            <div id="pdf" class="pdfDiv">
+                <iframe id="viewer" src="web\viewer.html" class="pdfDiv"></iframe>
+            </div>
+        <div id="buttons" style="background-color:white; border-top:1px solid hsl(0,0%,85%);">
+            <button id="qvga">Small Cam</button>
+            <button id="vga" class="button_2">Large Cam</button>
+            <button id="stop" class="button_2">stop</button>
+
+            <div style="width:100%; border-top:1px solid hsl(0,0%,85%);"></div>
+            <!--<button id="hd">HD</button>
+        <button id="full-hd">Full HD</button>-->
+            <video id="gum-res-local"></video>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
