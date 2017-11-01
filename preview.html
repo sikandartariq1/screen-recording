@@ -37,11 +37,12 @@ html, body {
 video {
     border-left: 1px dotted red;
     border-right: 1px dotted red;
+    margin-top: 125px;
 }
 header {
     position: absolute;
     background: white;
-    height: 60px;
+    height: 95px;
     font-size: 30px;
     text-align: center;
     padding: 10px 20px;
@@ -91,14 +92,14 @@ header {
 <link rel="manifest" href="manifest.json">
 <header>
 <!--     <img id="btn-upload" src="images/upload-icon.png" title="Upload"> -->
-    <p>
-        <a id="file-name" title="Download on your Disk!"></a>
-        (Size: <span id="file-size"></span>)
+    <div class="row">
+        <a id="file-name" class="btn btn-info" ><img src="images/save.png" title="Upload"></a>
+        (Size: <span id="file-size"></span>)<br>
+            <span style="font-size: 17px">This file is in your <b>browser cache</b>. Click above link to <b>download</b>.</span>
         <!--
         Duration: <span id="file-duration">00:00</span>
         -->
-    </p>
-    <span style="font-size: 17px">This file is in your <b>browser cache</b>. Click above link to <b>download</b>.</span>
+    </div>
 </header>
 
 <!-- <div id="btn-upload-dropdown">

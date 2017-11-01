@@ -25,7 +25,7 @@ DiskStorage.Fetch('latest-file', function(f) {
     }
 
     video.src = URL.createObjectURL(file);
-    fname.innerHTML = fname.download = title.innerHTML = file.name;
+    fname.download = file.name;
     fname.href = video.src;
     fsize.innerHTML = bytesToSize(file.size);
     // fduration.innerHTML = file.duration || '00:00';
