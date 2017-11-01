@@ -79,11 +79,11 @@ function stop(){
 }
 
 var qvgaConstraints = {
-    video: { width: { exact: 320 }, height: { exact: 240 } }
+    video: { width: { exact: 250 }, height: { exact: 250 } }
 };
 
 var vgaConstraints = {
-    video: { width: { exact: 640 }, height: { exact: 480 } }
+    video: { width: { exact: 250 }, height: { exact: 250 } }
 };
 
 var hdConstraints = {
