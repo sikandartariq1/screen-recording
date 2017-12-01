@@ -1,7 +1,7 @@
 
 
 'use strict';
-$('#gum-res-local').on('mousedown', function (e) {
+$('.gum-res-local').on('mousedown', function (e) {
 
     $(this).addClass('active').parents().on('mousemove', function (e) {
 
@@ -23,7 +23,7 @@ $('#gum-res-local').on('mousedown', function (e) {
 
 
 var dimensions = document.querySelector('#dimensions');
-var video = document.querySelector('video');
+var video = document.querySelector('.gum-res-local');
 var pdf = document.querySelector('#pdf');
 var pdfFrame = document.querySelector('#viewer');
 
@@ -50,6 +50,11 @@ vgaButton.onclick = function () {
 
     }
 
+    if(video.classList.contains('gum-res-local')){
+        video.classList.add('gum-res-local-2');
+        video.classList.remove('gum-res-local');
+    }
+
 };
 
 qvgaButton.onclick = function () {
@@ -61,6 +66,11 @@ qvgaButton.onclick = function () {
         pdfFrame.classList.add('pdfDiv');
         pdfFrame.classList.remove('pdfDiv2');
 
+    }
+
+    if(video.classList.contains('gum-res-local-2')){
+        video.classList.add('gum-res-local');
+        video.classList.remove('gum-res-local-2');
     }
 
 };
@@ -79,11 +89,11 @@ function stop(){
 }
 
 var qvgaConstraints = {
-    video: { width: { exact: 250 }, height: { exact: 250 } }
+    video: { width: { exact: 320 }, height: { exact: 240 } }
 };
 
 var vgaConstraints = {
-    video: { width: { exact: 250 }, height: { exact: 250 } }
+    video: { width: { exact: 640 }, height: { exact: 480 } }
 };
 
 var hdConstraints = {

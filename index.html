@@ -22,13 +22,21 @@
     <style>
 
 
-#gum-res-local {
+.gum-res-local {
     cursor: move;
     z-index:1;
-    border-radius: 150px;
-    height: 250px;
-    width: 250px;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
 }
+.gum-res-local-2 {
+    cursor: move;
+    z-index:1;
+    border-radius: 100%;
+    height: 480px;
+    width: 500px;
+}
+
 .active {
     background: grey;
     z-index: 2;
@@ -80,6 +88,7 @@
         }
         video{
             float:right;
+            object-fit: fill
         }
     </style>
 </head>
@@ -97,8 +106,7 @@
             <div style="width:100%; border-top:1px solid hsl(0,0%,85%);"></div>
             <!--<button id="hd">HD</button>
         <button id="full-hd">Full HD</button>-->
-            <video id="gum-res-local"></video>
-
+            <video class="gum-res-local"></video>
         </div>
 
     </div>
