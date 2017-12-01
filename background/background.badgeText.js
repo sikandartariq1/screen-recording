@@ -71,7 +71,7 @@ function setBadgeText(text) {
 }
 
 
-var images = ['recordRTC-progress-1.png', 'recordRTC-progress-2.png', 'recordRTC-progress-3.png', 'recordRTC-progress-4.png', 'recordRTC-progress-5.png'];
+var images = ['main-icon-32x32.png'];
 var imgIndex = 0;
 var reverse = false;
 
