@@ -20,7 +20,7 @@
         document.getElementById('videoMaxFrameRates').value = items['videoMaxFrameRates'];
     } else {
         chrome.storage.sync.set({
-            videoMaxFrameRates: ''
+            videoMaxFrameRates: '30'
         }, function() {
             document.getElementById('videoMaxFrameRates').value = 'None';
         });
@@ -30,7 +30,7 @@
         document.getElementById('bitsPerSecond').value = items['bitsPerSecond'];
     } else {
         chrome.storage.sync.set({
-            bitsPerSecond: ''
+            bitsPerSecond: '8000000'
         }, function() {
             document.getElementById('bitsPerSecond').value = 'default';
         });
