@@ -84,23 +84,23 @@ document.getElementById('microphone-screen').onclick = function() {
     });
 };
 
-document.getElementById('pdf-screen').onclick = function() {
-    chrome.storage.sync.set({
-        enableTabCaptureAPI: 'false',
-        enableMicrophone: 'true', // TRUE
-        enableCamera: 'false', // TRUE
-        enableScreen: 'true', // TRUE
-        isRecording: 'true', // TRUE
-        enableSpeakers: 'false'
-    }, function() {
-        runtimePort.postMessage({
-            messageFromContentScript1234: true,
-            startRecording: true
-        });
-        window.close();
-        chrome.tabs.create({ url: chrome.extension.getURL('index.html') });
-    });
-};
+// document.getElementById('pdf-screen').onclick = function() {
+//     chrome.storage.sync.set({
+//         enableTabCaptureAPI: 'false',
+//         enableMicrophone: 'true', // TRUE
+//         enableCamera: 'false', // TRUE
+//         enableScreen: 'true', // TRUE
+//         isRecording: 'true', // TRUE
+//         enableSpeakers: 'false'
+//     }, function() {
+//         runtimePort.postMessage({
+//             messageFromContentScript1234: true,
+//             startRecording: true
+//         });
+//         window.close();
+//         chrome.tabs.create({ url: chrome.extension.getURL('index.html') });
+//     });
+// };
 
 document.getElementById('microphone-screen-camera').onclick = function() {
     chrome.storage.sync.set({
