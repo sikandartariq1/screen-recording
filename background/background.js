@@ -124,7 +124,7 @@ function stopScreenRecording() {
 
     recorder.stop(function() {
         var mimeType = 'video/webm';
-        var fileExtension = 'webm';
+        var fileExtension = 'mp4';
 
         if (videoCodec === 'H264') {
             if (isMimeTypeSupported('video/webm\;codecs=h264')) {

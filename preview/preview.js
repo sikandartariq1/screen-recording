@@ -8,8 +8,8 @@ var header = document.querySelector('header');
 
 function setVideoWidth() {
     video.style.cursor = 'pointer';
-    video.style.marginTop = header.clientHeight;
-    video.style.height = innerHeight - header.clientHeight;
+    //video.style.marginTop = header.clientHeight;
+    //video.style.height = innerHeight - header.clientHeight;
 }
 
 window.onresize = setVideoWidth;

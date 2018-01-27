@@ -35,21 +35,18 @@ html, body {
   overflow-x: hidden;
 }
 video {
+    width: 90%;
+    height: 500px;
     border-left: 1px dotted red;
     border-right: 1px dotted red;
-    margin-top: 125px;
 }
 header {
-    position: absolute;
     background: white;
-    height: 95px;
     font-size: 30px;
     text-align: center;
     padding: 10px 20px;
     z-index: 99;
     left: 0;
-    right: 0;
-    top: 0;
     border-bottom: 1px dotted red;
     overflow: hidden;
 }
@@ -88,32 +85,34 @@ header {
 }
 </style>
 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <title></title>
 <link rel="manifest" href="manifest.json">
-<header>
-<!--     <img id="btn-upload" src="images/upload-icon.png" title="Upload"> -->
+
+<body>
     <div class="row">
-        <a id="file-name" class="btn btn-info" ><img src="images/save.png" title="Upload"></a>
+      <div class="col-12 text-center">
         (Size: <span id="file-size"></span>)<br>
-            <span style="font-size: 17px">This file is in your <b>browser cache</b>. Click above link to <b>download</b>.</span>
-        <!--
-        Duration: <span id="file-duration">00:00</span>
-        -->
+          <span style="font-size: 17px">This file is in your <b>browser cache</b>.</span>
+      </div>
     </div>
-</header>
+    <div class="row">
 
-<!-- <div id="btn-upload-dropdown">
-  <div id="btn-youtube-upload">Upload to YouTube</div>
-  <div id="btn-php-upload">Upload to PHP</div>
-</div>
- -->
-<section style="text-align: center;">
-  <video controls disable-contextmenu cf-video-load="file"></video>
-</section>
+      <div class="col-12" style="background-color: lightgrey; padding-left: 8%;">
+        <video controls disable-contextmenu cf-video-load="file"></video>
+      </div>
+    </div>
+    <dir class="row">
+      <div class="col-12 text-center">
+        <a id="file-name" class="btn"><img src="images/save.png" title="Upload"></a>
+      </div>
+    </dir>
 
-<script src="RecordRTC/DiskStorage.js"></script>
-<script src="background/background.common.js"></script>
-<script src="preview/preview.js"></script>
+  <script src="RecordRTC/DiskStorage.js"></script>
+  <script src="background/background.common.js"></script>
+  <script src="preview/preview.js"></script>
+</body>
+
 <!-- <script src="preview/preview.php.upload.js"></script>
 <script src="preview/preview.youtube.upload.js"></script>
 <script src="https://apis.google.com/js/client:plusone.js"></script>
