@@ -7,24 +7,29 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 .btn-custom{
-  color: #fff;
-  border-color: red;
-  background-color: #fc00fc;
+  color: black;
+  border-color: gray;
+  background-color: white;
   cursor: pointer;
 }
+
 .btn-custom:hover{
-  background-color: #ff0084;
+  background-color: gray;
+  color: white;
 }
+
 .btn-outline-custom{
-  color: #fff;
-  border-color: #fc00fc;
+  color: black;
+  border-color: gray;
   background-color: transparent;
   cursor: pointer;
 }
+
 .btn-outline-custom:hover{
-  color: #333;
-  background-color: #fc00fc;
+  color: white;
+  background-color: gray;
 }
+
 .bg-custom{
-  background-color: #fc00fc;
+  background-color: white;
 }
